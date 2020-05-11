@@ -72,7 +72,8 @@ class CStatisticTool:
         self.module = config["basic"]["module"]
         self.term_list = config["basic"]["term_list"]
 
-        self.request_url = self.url + "spider_log_" + self.module + "_*/logs/_search"
+		#your info store address
+        self.request_url = self.url + "your_log_" + self.module + "_*/logs/_search"
 
         terms = self.term_list.split(';')
         for term in terms:
